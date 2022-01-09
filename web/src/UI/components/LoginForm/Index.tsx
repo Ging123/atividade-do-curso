@@ -5,7 +5,7 @@ import { FaUserAlt, FaLock } from 'react-icons/fa';
 import MainButton from "../MainButton/Index";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,10 +15,10 @@ const LoginForm = () => {
       <MainInput
         icone={<FaUserAlt/>}
         margin="30px 0px 10px 0px"
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => setUsername(e.target.value)}
         placeholder="Email"
         type="email"
-        value={email}
+        value={username}
       />
       <MainInput
         icone={<FaLock/>}

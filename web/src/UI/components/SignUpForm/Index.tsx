@@ -5,7 +5,6 @@ import MainButton from '../MainButton/Index';
 import MainInput from '../MainInput/Index';
 
 const SignUpForm = () => {
-  const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,16 +12,6 @@ const SignUpForm = () => {
 
   return (
     <DefaultForm>
-      <MainInput
-        icone={<FaEnvelope/>}
-        margin='15px 0px 10px 0px'
-        maxLength={100}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder='Email'
-        type='email'
-        required={true}
-        value={email}
-      />
       <MainInput
         icone={<FaUserAlt/>}
         maxLength={30}

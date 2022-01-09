@@ -14,7 +14,7 @@ const OrdersTable = () => {
     },
     {
       cellStyle:{ background:color.bodyBlack },
-      field:"furniture",
+      field:"color",
       headerStyle:{ background:color.bodyBlack },
       title:"Cor"
     },
