@@ -1,0 +1,13 @@
+.main-button {
+  background:var(--main-green);
+  border:none;
+  border-radius:100px;
+  color:white;
+  font: {
+    size:18px;
+    weight:600;
+  }
+  outline:none;
+  padding:10px;
+  width:100%;
+}

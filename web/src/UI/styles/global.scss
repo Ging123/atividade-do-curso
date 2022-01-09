@@ -1,0 +1,26 @@
+* {
+  box-sizing:border-box;
+  color:white;
+  font-family:arial;
+  margin:0px;
+}
+
+:root {
+  --body-black:#252525;
+  --main-green:#6EC691;
+}
+
+body {
+  background:var(--body-black);
+}
+
+.less-brightness-on-hover-or-click {
+  &:hover {
+    cursor:pointer;
+    filter:brightness(90%);
+  }
+
+  &:active {
+    filter:brightness(80%);
+  }
+}

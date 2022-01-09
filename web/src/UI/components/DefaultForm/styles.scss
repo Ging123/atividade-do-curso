@@ -1,0 +1,14 @@
+.default-form {
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  width:450px;
+}
+
+@media (max-width:450px) {
+  .default-form {
+    width:100%;
+  }
+}

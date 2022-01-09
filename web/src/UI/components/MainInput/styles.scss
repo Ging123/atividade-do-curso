@@ -1,0 +1,21 @@
+.main-input-container {
+  position:relative;
+  width:100%;
+}
+
+.main-input-container > svg {
+  left:10px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-49%);
+  font-size:18px;
+}
+
+.main-input {
+  background:none;
+  border:1px solid var(--main-green);
+  border-radius:100px;
+  font-size:18px;
+  padding:10px 35px;
+  width:100%;
+}
