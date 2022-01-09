@@ -1,0 +1,41 @@
+version: "3.1"
+services: 
+  db:
+    image: mongo:4.4
+    container_name: db
+    env_file: 
+      - .env
+    restart: always
+    ports: 
+      - 27017:27017
+    volumes:
+      - './seed.js:/docker-entrypoint-initdb.d/mongo-init.js:ro'
+
+
+  api: 
+    image: node:17
+    container_name: api
+    restart: always
+    environment:
+      CLIENT_URL: ${CLIENT_URL}
+      SESSION_SECRET: ${SESSION_SECRET}
+      SERVER_PORT: ${DOCKER_SERVER_PORT}
+      DB_URL: mongodb://db:27017
+      DB_URL_TEST: mongodb://db:27017
+    depends_on:
+      - db
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules/
+      
+    working_dir: /usr/src/app
+    command: sh -c "npm install && npm run start" 
+    links: 
+      - db
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"

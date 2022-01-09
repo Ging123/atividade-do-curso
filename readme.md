@@ -1,0 +1,3 @@
+## DESCRIÇÃO
+Você foi convidado a desenvolver um sistema de uma empresa de móveis planejados.
+A empresa funciona da seguinte forma: o usuário solicita um móvel, passando os dados: nome do móvel, cor, medidas, material e um link para a imagem do móvel. A empresa, designa o móvel a ser construído para um dos funcionários, que por sua vez estará com status: Disponível ou Indisponível, além do nome dele. A venda do móvel terá um valor, o status: Solicitado, Em construção ou Entregue. Quando o status da venda for entregue o Funcionário associado ao serviço, voltará ao status de disponível.
