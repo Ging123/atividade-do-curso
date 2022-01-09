@@ -5,6 +5,8 @@ import SubTitle from '../../components/SubTitle/Index';
 import Title from '../../components/Title/Index';
 
 const SignUp = () => {
+  document.title = 'Cadastrar-se';
+
   return (
     <PageContainer>
       <Title margin="10px 0px" text='cadastre-se'/>

@@ -11,14 +11,14 @@ A empresa funciona da seguinte forma: o usuário solicita um móvel, passando os
 pastas **API** e **WEB** vão possuir readme ensinando a levantar cada um dos servidores
 
 ## FEATURES
-- [] Usuário e empresa pode se logar
-- [] Usuário e empresa pode dar logout
-- [] Usuário pode criar conta
-- [] Usuário pode solicita um móvel
-- [] Empresa pode ver os móveis solicitados
-- [] Empresa pode adicionar funcionários
-- [] Empresa pode designar o movel a ser construido por um funcionário
-- [] Empresa pode registrar que a venda do móvel foi concluida
+[] Usuário e empresa pode se logar
+[] Usuário e empresa pode dar logout
+[] Usuário pode criar conta
+[] Usuário pode solicita um móvel
+[] Empresa pode ver os móveis solicitados
+[] Empresa pode adicionar funcionários
+[] Empresa pode designar o movel a ser construido por um funcionário
+[] Empresa pode registrar que a venda do móvel foi concluida
 
 ## TECNOLOGIAS
 - Node js

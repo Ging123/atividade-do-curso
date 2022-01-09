@@ -5,9 +5,11 @@ import SubTitle from "../../components/SubTitle/Index";
 import Title from "../../components/Title/Index";
 
 const Login = () => {
+  document.title = 'Entrar';
+
   return (
     <PageContainer>
-      <Title margin="10px 0px" text='bem vindo!'/>
+      <Title margin="10px 0px" text='Entrar'/>
       <SubTitle text='Coloque seus dados para você poder entrar :)'/>
       <LoginForm/>
       <SignUpMessage/>
