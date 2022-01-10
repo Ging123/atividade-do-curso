@@ -19,6 +19,7 @@ npm run start
 ```
 ou caso você queira pode se rodar a api com o docker
 ```
+cd api
 docker-composer up -d
 ```
 
