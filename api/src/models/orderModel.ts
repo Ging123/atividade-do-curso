@@ -41,6 +41,11 @@ class OrderModel {
       required:true,
       maxLength:100,
       index:true
+    }, 
+    canBeWorked: {
+      type:Boolean, 
+      required:true,
+      index:true
     }
   });
 
@@ -52,7 +57,8 @@ class OrderModel {
       color:order.color,
       metric:order.metric,
       material:order.material,
-      image:order.image
+      image:order.image,
+      canBeWorked:true
     });
   }
 }

@@ -18,7 +18,6 @@ class WorkerModel {
     furniture: {
       type:String,
       index:true,
-      required:true,
       maxlength:100
     }
   });

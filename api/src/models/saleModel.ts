@@ -31,7 +31,7 @@ class SaleModel {
 
   protected readonly saleModel = mongoose.models.sale || mongoose.model('sale', this.saleSchema);
 
-  protected createNewUser(sale:sale) {
+  protected createNewSale(sale:sale) {
     return new this.saleModel({
       name:sale.name,
       price:sale.price,
