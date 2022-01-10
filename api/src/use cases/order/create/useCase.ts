@@ -1,14 +1,25 @@
 import { order } from "../../../models/orderModel";
 import OrderRepository from "../../../repositories/orderRepository";
 import exception from "../../../utils/exceptions";
+import SaleRepository from "../../../repositories/saleRepository";
 
 class OrderCreateUseCase {
 
   private order = new OrderRepository();
+  private sale = new SaleRepository();
   
   public async create(order:order) {
     this.validate(order);
+    await this.createSale(order);
     return await this.order.create(order);
+  }
+
+  private async createSale(order:order) {
+    await this.sale.create({
+      name:order.name,
+      price:0,
+      status:'Solicitado'
+    });
   }
 
   private validate(order:order) {
