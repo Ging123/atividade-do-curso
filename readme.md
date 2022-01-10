@@ -30,16 +30,6 @@ npm install
 npm run start
 ```
 
-## FEATURES
-[ ] Usuário e empresa pode se logar
-[ ] Usuário e empresa pode dar logout
-[ ] Usuário pode criar conta
-[ ] Usuário pode solicita um móvel
-[ ] Empresa pode ver os móveis solicitados
-[ ] Empresa pode adicionar funcionários
-[ ] Empresa pode designar o movel a ser construido por um funcionário
-[ ] Empresa pode registrar que a venda do móvel foi concluida
-
 ## TECNOLOGIAS
 - Node js
 - Express
