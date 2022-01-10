@@ -1,8 +1,10 @@
 import express from 'express';
 
 const route = express.Router();
-const userRoute = require('./src/routes/userRoutes');
+const userRoutes = require('./src/routes/userRoutes');
+const orderRoutes = require('./src/routes/orderRoutes');
 
-route.use(userRoute);
+route.use('/user', userRoutes);
+route.use('/order', orderRoutes);
 
 export default route; 
